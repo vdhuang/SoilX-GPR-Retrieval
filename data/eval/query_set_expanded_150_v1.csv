@@ -1,0 +1,151 @@
+query_id,query_text,bucket,expected_decision,expected_branch,label_confidence,notes
+QX001,"layer 1 thickness 0.6 m, layer 2 thickness 1.2 m, layer 3 thickness 2.1 m",supported,accept,threshold_pass,high,in-range layered thickness profile
+QX002,"layer 1 thickness 0.75 m, layer 2 thickness 1.3 m, layer 3 thickness 2.4 m",partial_support,fallback,threshold_fail,high,in-range layered thickness profile
+QX003,"layer 1 thickness 0.9 m, layer 2 thickness 1.1 m, layer 3 thickness 2.0 m",partial_support,fallback,threshold_fail,high,in-range layered thickness profile
+QX004,"layer 1 thickness 0.55 m, layer 2 thickness 1.45 m, layer 3 thickness 2.35 m",partial_support,fallback,threshold_fail,high,in-range layered thickness profile
+QX005,"layer 1 thickness 0.68 m, layer 2 thickness 1.25 m, layer 3 thickness 2.55 m",partial_support,fallback,threshold_fail,high,in-range layered thickness profile
+QX006,"layer 1 thickness 0.82 m, layer 2 thickness 1.15 m, layer 3 thickness 2.2 m",partial_support,fallback,threshold_fail,high,in-range layered thickness profile
+QX007,"layer 1 thickness 0.47 m, layer 2 thickness 1.35 m, layer 3 thickness 2.3 m",partial_support,fallback,threshold_fail,high,in-range layered thickness profile
+QX008,"layer 1 thickness 0.71 m, layer 2 thickness 1.18 m, layer 3 thickness 2.48 m",partial_support,fallback,threshold_fail,high,in-range layered thickness profile
+QX009,"layer 1 thickness 0.63 m, layer 2 thickness 1.28 m, layer 3 thickness 2.18 m",partial_support,fallback,threshold_fail,high,in-range layered thickness profile
+QX010,"layer 1 thickness 0.86 m, layer 2 thickness 1.22 m, layer 3 thickness 2.42 m",partial_support,fallback,threshold_fail,high,in-range layered thickness profile
+QX011,layer 1 theta_v 0.1,supported,accept,threshold_pass,high,single-field moisture in normal range
+QX012,layer 1 theta_v 0.12,partial_support,fallback,threshold_fail,high,single-field moisture in normal range
+QX013,layer 1 theta_v 0.16,partial_support,fallback,threshold_fail,high,single-field moisture in normal range
+QX014,layer 2 theta_v 0.11,unsupported,fallback,unsupported,high,single-field moisture in normal range
+QX015,layer 2 theta_v 0.14,partial_support,fallback,threshold_fail,high,single-field moisture in normal range
+QX016,layer 2 theta_v 0.18,partial_support,fallback,threshold_fail,high,single-field moisture in normal range
+QX017,layer 3 theta_v 0.09,unsupported,fallback,unsupported,high,single-field moisture in normal range
+QX018,layer 3 theta_v 0.13,unsupported,fallback,unsupported,high,single-field moisture in normal range
+QX019,layer 3 theta_v 0.17,unsupported,fallback,unsupported,high,single-field moisture in normal range
+QX020,layer 2 theta_v 0.15,partial_support,fallback,threshold_fail,high,single-field moisture in normal range
+QX021,layer 1 sand 72 percent and layer 1 clay 12 percent,supported,accept,threshold_pass,high,composition constraints with plausible totals
+QX022,layer 1 sand 65 percent and layer 1 clay 15 percent,partial_support,fallback,threshold_fail,high,composition constraints with plausible totals
+QX023,layer 2 sand 60 percent and layer 2 clay 20 percent,partial_support,fallback,threshold_fail,high,composition constraints with plausible totals
+QX024,layer 2 sand 68 percent and layer 2 clay 10 percent,unsupported,fallback,unsupported,high,composition constraints with plausible totals
+QX025,layer 3 sand 58 percent and layer 3 clay 22 percent,unsupported,fallback,unsupported,high,composition constraints with plausible totals
+QX026,layer 3 sand 70 percent and layer 3 clay 8 percent,unsupported,fallback,unsupported,high,composition constraints with plausible totals
+QX027,layer 2 sand 55 percent and layer 2 clay 25 percent,partial_support,fallback,threshold_fail,high,composition constraints with plausible totals
+QX028,layer 1 sand 62 percent and layer 1 clay 18 percent,partial_support,fallback,threshold_fail,high,composition constraints with plausible totals
+QX029,layer 3 sand 64 percent and layer 3 clay 16 percent,unsupported,fallback,unsupported,high,composition constraints with plausible totals
+QX030,layer 2 sand 66 percent and layer 2 clay 14 percent,unsupported,fallback,unsupported,high,composition constraints with plausible totals
+QX031,layer 1 thickness 0.05 m,unsupported,fallback,unsupported,high,near observed thickness boundary
+QX032,layer 1 thickness 0.08 m,unsupported,fallback,unsupported,high,near observed thickness boundary
+QX033,layer 1 thickness 2.8 m,unsupported,fallback,unsupported,high,near observed thickness boundary
+QX034,layer 2 thickness 0.1 m,unsupported,fallback,unsupported,high,near observed thickness boundary
+QX035,layer 2 thickness 2.7 m,unsupported,fallback,unsupported,high,near observed thickness boundary
+QX036,layer 2 thickness 2.9 m,unsupported,fallback,unsupported,high,near observed thickness boundary
+QX037,layer 3 thickness 0.12 m,unsupported,fallback,unsupported,high,near observed thickness boundary
+QX038,layer 3 thickness 2.6 m,supported,accept,threshold_pass,high,near observed thickness boundary
+QX039,layer 3 thickness 2.85 m,supported,accept,threshold_pass,high,near observed thickness boundary
+QX040,layer 1 thickness 2.95 m,unsupported,fallback,unsupported,high,near observed thickness boundary
+QX041,layer 1 moisture theta_v 0.02,unsupported,fallback,unsupported,high,near moisture support edge
+QX042,layer 1 moisture theta_v 0.28,unsupported,fallback,unsupported,high,near moisture support edge
+QX043,layer 2 moisture theta_v 0.03,unsupported,fallback,unsupported,high,near moisture support edge
+QX044,layer 2 moisture theta_v 0.27,unsupported,fallback,unsupported,high,near moisture support edge
+QX045,layer 3 moisture theta_v 0.02,unsupported,fallback,unsupported,high,near moisture support edge
+QX046,layer 3 moisture theta_v 0.26,partial_support,fallback,threshold_fail,high,near moisture support edge
+QX047,layer 1 moisture theta_v 0.3,unsupported,fallback,unsupported,high,near moisture support edge
+QX048,layer 2 moisture theta_v 0.01,unsupported,fallback,unsupported,high,near moisture support edge
+QX049,layer 3 moisture theta_v 0.29,partial_support,fallback,threshold_fail,high,near moisture support edge
+QX050,layer 2 moisture theta_v 0.3,unsupported,fallback,unsupported,high,near moisture support edge
+QX051,layer 1 bulk density 1.25,unsupported,fallback,unsupported,high,density near lower/upper support edges
+QX052,layer 1 bulk density 1.75,unsupported,fallback,unsupported,high,density near lower/upper support edges
+QX053,layer 2 bulk density 1.28,unsupported,fallback,unsupported,high,density near lower/upper support edges
+QX054,layer 2 bulk density 1.73,unsupported,fallback,unsupported,high,density near lower/upper support edges
+QX055,layer 3 bulk density 1.27,unsupported,fallback,unsupported,high,density near lower/upper support edges
+QX056,layer 3 bulk density 1.72,unsupported,fallback,unsupported,high,density near lower/upper support edges
+QX057,layer 1 particle density 2.45,unsupported,fallback,unsupported,high,density near lower/upper support edges
+QX058,layer 2 particle density 2.42,unsupported,fallback,unsupported,high,density near lower/upper support edges
+QX059,layer 3 particle density 2.4,unsupported,fallback,unsupported,high,density near lower/upper support edges
+QX060,layer 2 particle density 2.46,unsupported,fallback,unsupported,high,density near lower/upper support edges
+QX061,layer 1 thickness 0.7 m with layer 2 bulk density 1.9 and layer 3 thickness 2.2 m,partial_support,fallback,threshold_fail,high,mix of supported and unsupported constraints in one query
+QX062,top layer 0.6 m and middle layer theta_v 0.18 but bottom particle density 2.75,partial_support,fallback,threshold_fail,high,mix of supported and unsupported constraints in one query
+QX063,layer 1 sand 68 percent with layer 2 clay 14 percent and layer 3 theta_v 0.5,partial_support,fallback,threshold_fail,high,mix of supported and unsupported constraints in one query
+QX064,layer 2 thickness 1.1 m plus layer 3 bulk density 1.6 and layer 1 theta_v 0.45,partial_support,fallback,threshold_fail,high,mix of supported and unsupported constraints in one query
+QX065,layer 1 clay 20 percent with layer 1 sand 62 percent and layer 2 particle density 2.9,partial_support,fallback,threshold_fail,high,mix of supported and unsupported constraints in one query
+QX066,"middle layer thickness 1.4 m, lower layer thickness 2.2 m, top moisture 0.42",partial_support,fallback,threshold_fail,high,mix of supported and unsupported constraints in one query
+QX067,layer 3 thickness 2.3 m and layer 2 silt 35 percent with layer 2 bulk density 1.9,partial_support,fallback,threshold_fail,high,mix of supported and unsupported constraints in one query
+QX068,layer 1 theta_v 0.11 and layer 2 theta_v 0.16 with layer 3 theta_v 0.48,partial_support,fallback,threshold_fail,high,mix of supported and unsupported constraints in one query
+QX069,layer 1 particle density 2.58 and layer 2 thickness 1.3 m plus layer 3 particle density 2.78,partial_support,fallback,threshold_fail,high,mix of supported and unsupported constraints in one query
+QX070,layer 2 sand 64 percent with clay 12 percent and layer 1 bulk density 2.1,unsupported,fallback,unsupported,high,mix of supported and unsupported constraints in one query
+QX071,"upper layer 0.55 m, middle layer 1.25 m, bottom layer 2.15 m, but layer 3 theta_v 0.43",partial_support,fallback,threshold_fail,high,mix of supported and unsupported constraints in one query
+QX072,layer 1 silt 24 percent and layer 2 silt 30 percent and layer 3 silt 110 percent,partial_support,fallback,threshold_fail,high,mix of supported and unsupported constraints in one query
+QX073,layer 2 thickness 1.6 m and layer 2 theta_v 0.12 with layer 1 bulk density 0.9,partial_support,fallback,threshold_fail,high,mix of supported and unsupported constraints in one query
+QX074,layer 3 sand 66 percent and clay 14 percent with particle density 2.85,unsupported,fallback,unsupported,high,mix of supported and unsupported constraints in one query
+QX075,layer 1 thickness 0.9 m with layer 2 thickness 1.4 m and layer 3 thickness 4.0 m,partial_support,fallback,threshold_fail,high,mix of supported and unsupported constraints in one query
+QX076,layer 1 theta_v 0.13 and layer 2 bulk density 1.62 and layer 3 bulk density 2.2,partial_support,fallback,threshold_fail,high,mix of supported and unsupported constraints in one query
+QX077,top moist layer theta_v 0.2 over dry middle theta_v 0.07 and lower theta_v 0.5,unsupported,fallback,unsupported,high,mix of supported and unsupported constraints in one query
+QX078,layer 2 clay 18 percent and sand 61 percent with particle density 3.1,partial_support,fallback,threshold_fail,high,mix of supported and unsupported constraints in one query
+QX079,layer 1 thickness 0.45 m and layer 2 thickness 1.05 m and layer 3 particle density 2.2,partial_support,fallback,threshold_fail,high,mix of supported and unsupported constraints in one query
+QX080,layer 2 silt 42 percent with layer 2 clay 16 percent and layer 2 theta_v 0.39,partial_support,fallback,threshold_fail,high,mix of supported and unsupported constraints in one query
+QX081,layer 1 bulk density 1.58 and layer 2 bulk density 1.64 and layer 3 bulk density 0.7,partial_support,fallback,threshold_fail,high,mix of supported and unsupported constraints in one query
+QX082,layer 3 theta_v 0.14 and layer 3 thickness 2.1 m plus layer 1 thickness -0.1 m,partial_support,fallback,threshold_fail,high,mix of supported and unsupported constraints in one query
+QX083,middle layer sand 63 percent and clay 11 percent with middle theta_v 0.46,unsupported,fallback,unsupported,high,mix of supported and unsupported constraints in one query
+QX084,layer 1 particle density 2.52 and layer 2 particle density 2.55 and layer 3 particle density 2.9,partial_support,fallback,threshold_fail,high,mix of supported and unsupported constraints in one query
+QX085,"surface layer 0.52 m over 1.18 m and 2.45 m, with lower moisture 0.44",partial_support,fallback,threshold_fail,medium,mix of supported and unsupported constraints in one query
+QX086,layer 1 silt 28 percent and layer 1 clay 14 percent with layer 1 theta_v 0.41,partial_support,fallback,threshold_fail,high,mix of supported and unsupported constraints in one query
+QX087,layer 2 bulk density 1.66 with layer 2 thickness 1.2 m and layer 2 sand 140 percent,partial_support,fallback,threshold_fail,high,mix of supported and unsupported constraints in one query
+QX088,layer 3 thickness 2.0 m with layer 3 theta_v 0.12 and layer 3 bulk density 2.3,partial_support,fallback,threshold_fail,high,mix of supported and unsupported constraints in one query
+QX089,layer 1 clay 13 percent and sand 70 percent plus layer 2 theta_v 0.47,partial_support,fallback,threshold_fail,high,mix of supported and unsupported constraints in one query
+QX090,layer 2 thickness 1.0 m and layer 3 thickness 2.0 m and layer 1 particle density 2.95,partial_support,fallback,threshold_fail,high,mix of supported and unsupported constraints in one query
+QX091,layer 1 thickness -0.5 m,partial_support,fallback,threshold_fail,high,constraints outside physical/data support
+QX092,layer 2 theta_v 0.75,unsupported,fallback,unsupported,high,constraints outside physical/data support
+QX093,layer 3 particle density 3.4,unsupported,fallback,unsupported,high,constraints outside physical/data support
+QX094,layer 1 bulk density 0.2,unsupported,fallback,unsupported,high,constraints outside physical/data support
+QX095,layer 2 sand 180 percent,unsupported,fallback,unsupported,high,constraints outside physical/data support
+QX096,layer 3 clay -15 percent,unsupported,fallback,unsupported,high,constraints outside physical/data support
+QX097,all layers theta_v 0.9,unsupported,fallback,unsupported,high,constraints outside physical/data support
+QX098,layer 1 thickness 6.0 m,partial_support,fallback,threshold_fail,high,constraints outside physical/data support
+QX099,layer 2 thickness 7.5 m,partial_support,fallback,threshold_fail,high,constraints outside physical/data support
+QX100,layer 3 thickness 8.0 m,partial_support,fallback,threshold_fail,high,constraints outside physical/data support
+QX101,layer 1 particle density 4.0,unsupported,fallback,unsupported,high,constraints outside physical/data support
+QX102,layer 2 bulk density 3.0,unsupported,fallback,unsupported,high,constraints outside physical/data support
+QX103,layer 3 theta_v -0.2,partial_support,fallback,threshold_fail,medium,constraints outside physical/data support
+QX104,layer 1 sand -5 percent and clay 120 percent,unsupported,fallback,unsupported,high,constraints outside physical/data support
+QX105,layer 2 silt 130 percent,unsupported,fallback,unsupported,high,constraints outside physical/data support
+QX106,layer 3 bulk density 0.4,unsupported,fallback,unsupported,high,constraints outside physical/data support
+QX107,layer 1 theta_v 1.2,unsupported,fallback,unsupported,high,constraints outside physical/data support
+QX108,layer 2 particle density 0.8,unsupported,fallback,unsupported,high,constraints outside physical/data support
+QX109,top layer thickness 10 m over middle 10 m over bottom 10 m,partial_support,fallback,threshold_fail,high,constraints outside physical/data support
+QX110,layer 1 clay 150 percent,unsupported,fallback,unsupported,high,constraints outside physical/data support
+QX111,layer 2 theta_v 2.0,unsupported,fallback,unsupported,high,constraints outside physical/data support
+QX112,layer 3 particle density 5.2,unsupported,fallback,unsupported,high,constraints outside physical/data support
+QX113,layer 1 bulk density -1.0,partial_support,fallback,threshold_fail,medium,constraints outside physical/data support
+QX114,layer 2 thickness -2 m,partial_support,fallback,threshold_fail,high,constraints outside physical/data support
+QX115,layer 3 sand 250 percent,unsupported,fallback,unsupported,high,constraints outside physical/data support
+QX116,layer 1 silt -30 percent,unsupported,fallback,unsupported,high,constraints outside physical/data support
+QX117,layer 2 clay 300 percent,unsupported,fallback,unsupported,high,constraints outside physical/data support
+QX118,layer 3 theta_v 5.0,unsupported,fallback,unsupported,high,constraints outside physical/data support
+QX119,layer 1 particle density 9.0,unsupported,fallback,unsupported,high,constraints outside physical/data support
+QX120,layer 2 bulk density 0.0,unsupported,fallback,unsupported,high,constraints outside physical/data support
+QX121,"top layer around 0.58 m with high sand near 68 percent, middle layer theta_v 0.12 and bottom layer clay near 18 percent",partial_support,fallback,threshold_fail,high,multi-constraint natural-language query
+QX122,"surface 0.72 m, middle 1.34 m, deep 2.28 m; keep middle bulk density around 1.63",supported,accept,threshold_pass,high,multi-constraint natural-language query
+QX123,dry upper zone theta_v 0.07 over wetter middle theta_v 0.16 and moderate lower theta_v 0.12,partial_support,fallback,threshold_fail,high,multi-constraint natural-language query
+QX124,"top sandy layer about 70 percent sand with 11 percent clay, middle silty layer around 36 percent silt",supported,accept,threshold_pass,high,multi-constraint natural-language query
+QX125,layer 1 thickness 0.64 m and layer 2 thickness 1.22 m while layer 3 stays near 2.18 m,supported,accept,threshold_pass,high,multi-constraint natural-language query
+QX126,middle layer should be denser bulk density 1.68 while top remains 1.54 and bottom 1.62,partial_support,fallback,threshold_fail,high,multi-constraint natural-language query
+QX127,"layer 1 particle density 2.54, layer 2 particle density 2.57, layer 3 particle density 2.56",supported,accept,threshold_pass,high,multi-constraint natural-language query
+QX128,thin top horizon 0.18 m above 1.05 m middle and 2.35 m base with dry top moisture 0.06,partial_support,fallback,threshold_fail,high,multi-constraint natural-language query
+QX129,"top clay 14 percent and sand 66 percent, middle clay 17 percent and sand 60 percent",partial_support,fallback,threshold_fail,high,multi-constraint natural-language query
+QX130,top theta_v 0.10 and middle theta_v 0.14 with bottom theta_v 0.11,partial_support,fallback,threshold_fail,high,multi-constraint natural-language query
+QX131,seek 0.48 m upper layer over 1.18 m middle with bottom around 2.05 m and silt-rich middle near 38 percent,partial_support,fallback,threshold_fail,high,multi-constraint natural-language query
+QX132,upper sand-rich around 72 percent with low clay 9 percent and bulk density 1.57,supported,accept,threshold_pass,high,multi-constraint natural-language query
+QX133,"middle composition near sand 59, silt 29, clay 12 with theta_v 0.13",unsupported,fallback,unsupported,high,multi-constraint natural-language query
+QX134,bottom layer thickness near 2.4 m and bottom bulk density near 1.61,supported,accept,threshold_pass,high,multi-constraint natural-language query
+QX135,"top 0.95 m, middle 1.05 m, bottom 1.95 m with particle density around 2.55 in all layers",partial_support,fallback,threshold_fail,high,multi-constraint natural-language query
+QX136,"upper moisture 0.09, middle moisture 0.15, lower moisture 0.13 and clay fraction moderate",partial_support,fallback,threshold_fail,medium,multi-constraint natural-language query
+QX137,layer 1 bulk density 1.56 and layer 2 bulk density 1.64 with layer 3 bulk density 1.60,supported,accept,threshold_pass,high,multi-constraint natural-language query
+QX138,layer 2 silt close to 34 percent with layer 2 sand near 58 percent and clay near 8 percent,partial_support,fallback,threshold_fail,high,multi-constraint natural-language query
+QX139,top layer 0.52 m with theta_v 0.12 over middle 1.42 m with theta_v 0.14,partial_support,fallback,threshold_fail,high,multi-constraint natural-language query
+QX140,lower layer around 2.3 m and lower sand fraction around 62 percent with clay 13 percent,partial_support,fallback,threshold_fail,high,multi-constraint natural-language query
+QX141,"upper layer 0.66 m, middle 1.26 m, lower 2.46 m and keep densities realistic",supported,accept,threshold_pass,medium,multi-constraint natural-language query
+QX142,"top theta_v 0.11 with top bulk density 1.55, middle theta_v 0.13 with density 1.63",partial_support,fallback,threshold_fail,high,multi-constraint natural-language query
+QX143,middle layer 1.38 m and composition near 61 sand 24 silt 15 clay,partial_support,fallback,threshold_fail,high,multi-constraint natural-language query
+QX144,"three-layer target: 0.57 m, 1.17 m, 2.27 m plus top particle density 2.53",supported,accept,threshold_pass,high,multi-constraint natural-language query
+QX145,surface fine-grained blend with silt around 32 percent and clay around 16 percent,unsupported,fallback,unsupported,medium,multi-constraint natural-language query
+QX146,bottom denser particle density near 2.60 while top and middle near 2.55,supported,accept,threshold_pass,high,multi-constraint natural-language query
+QX147,"top 0.42 m over 1.32 m over 2.12 m, dry-to-moist transition from top to middle",partial_support,fallback,threshold_fail,medium,multi-constraint natural-language query
+QX148,"layer 1 sand 67 and clay 12, layer 2 sand 62 and clay 14, layer 3 sand 60 and clay 16",partial_support,fallback,threshold_fail,high,multi-constraint natural-language query
+QX149,middle horizon moderately wet theta_v 0.17 with top and bottom closer to 0.11,partial_support,fallback,threshold_fail,high,multi-constraint natural-language query
+QX150,"seek balanced profile with top thickness 0.7 m, middle 1.3 m, bottom 2.2 m and no extreme densities",supported,accept,threshold_pass,medium,multi-constraint natural-language query

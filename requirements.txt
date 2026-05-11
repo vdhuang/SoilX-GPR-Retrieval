@@ -1,0 +1,6 @@
+chromadb
+gradio
+matplotlib
+numpy
+pandas
+scikit-learn
